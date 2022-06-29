@@ -168,6 +168,33 @@ a:hover
    height: 100%;
    border-width: 0;
 }
+#wb_Text3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #C0C0C0;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#wb_Text9
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #C0C0C0;
+   overflow-y: hidden;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text9 div
+{
+   text-align: left;
+}
 </style>
 </head>
 <body>
@@ -187,7 +214,7 @@ a:hover
 <div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
 <div><span style="color:#0000FF;"><a href="./Projects.html">Back to projects</a></span></div>
 <div>&nbsp;</div>
-<div>January - May 2022</div>
+<div>April - May 2022</div>
 <div><strong>LiDAR SLAM using LeGO-LOAM</strong></div>
 <div><strong>(page under construction)</strong></div>
 </div>
@@ -216,44 +243,55 @@ a:hover
 </div>
 <div id="wb_Image1" style="position:absolute;left:532px;top:113px;width:368px;height:248px;z-index:6;">
 <img src="images/autonomousCar-1.jpg" id="Image1" alt=""></div>
-<table style="position:absolute;left:302px;top:1872px;width:601px;height:205px;z-index:7;table-layout:fixed;" cellpadding="0" cellspacing="1" id="Table1">
+<table style="position:absolute;left:209px;top:1616px;width:645px;height:187px;z-index:7;table-layout:fixed;" cellpadding="0" cellspacing="1" id="Table1">
 <tr>
-<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:left;vertical-align:top;width:74px;height:33px;">
+<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:center;vertical-align:top;width:97px;height:22px;">
 <div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
-<div> Algorithm</div>
+<div>&nbsp;<strong>Algorithm</strong></div>
 </div>
 </td>
-<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:center;vertical-align:top;width:170px;height:33px;">
+<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:center;vertical-align:top;width:145px;height:22px;">
 <div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
-<div>&nbsp;<span style="color:#0000FF;"><a href="https://github.com/RobustFieldAutonomyLab/LeGO-LOAM" target="_blank">LeGO-LOAM</a></span></div>
+<div><strong> LeGO-LOAM</strong></div>
 </div>
 </td>
-<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:left;vertical-align:top;width:170px;height:33px;">
-<div style="font-family:'Segoe UI';font-size:12px;color:#000000;">
+<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:center;vertical-align:top;width:193px;height:22px;">
+<div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
+<div><strong>Lego-LOAM-BOR</strong></div>
 </div>
 </td>
-<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:left;vertical-align:top;height:33px;">
-<div style="font-family:'Segoe UI';font-size:12px;color:#000000;">
+<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:center;vertical-align:top;height:22px;">
+<div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
+<div><strong> SC-LeGO-LOAM</strong></div>
 </div>
 </td>
 </tr>
 <tr>
-<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:left;vertical-align:top;width:74px;height:161px;">
+<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:center;vertical-align:top;width:97px;height:154px;">
 <div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
-<div> Output</div>
+<div><strong>Observation</strong></div>
 </div>
 </td>
-<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:left;vertical-align:top;width:170px;height:161px;">
+<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:left;vertical-align:top;width:145px;height:154px;">
 <div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
+<div> Accurate but slow (takes rosbag file's duration to process complete dataset)</div>
+<div>&nbsp;</div>
+<div>Can see z-drift in rviz</div>
+</div>
+</td>
+<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:left;vertical-align:top;width:193px;height:154px;">
+<div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
+<div>Faster (variable speed) than LeGO-LOAM but not accurate</div>
+<div>&nbsp;</div>
+<div>Can only see top view. No way to visualize z-drift in rviz</div>
 <div>&nbsp;</div>
 </div>
 </td>
-<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:left;vertical-align:top;width:170px;height:161px;">
-<div style="font-family:'Segoe UI';font-size:12px;color:#000000;">
-</div>
-</td>
-<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:left;vertical-align:top;height:161px;">
-<div style="font-family:'Segoe UI';font-size:12px;color:#000000;">
+<td style="background-color:transparent;background-image:none;border:1px solid #C0C0C0;text-align:left;vertical-align:top;height:154px;">
+<div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
+<div> Best (both accurate and fast)</div>
+<div>&nbsp;</div>
+<div>Can visualize Z-drift in rviz</div>
 </div>
 </td>
 </tr>
@@ -261,7 +299,7 @@ a:hover
 <div id="wb_YouTube1" style="position:absolute;left:208px;top:616px;width:660px;height:371px;z-index:8;">
 <iframe id="YouTube1" src="https://www.youtube.com/embed/ijp3X9NZBs4?rel=1&amp;loop=1&amp;playlist=ijp3X9NZBs4&amp;autoplay=1&amp;ap=%2526fmt%3D18&amp;autohide=1&amp;fs=1" frameborder="0" allowfullscreen></iframe>
 </div>
-<div id="wb_Text6" style="position:absolute;left:208px;top:1428px;width:692px;height:357px;z-index:9;">
+<div id="wb_Text6" style="position:absolute;left:208px;top:1428px;width:692px;height:170px;z-index:9;">
 <div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
 <div style="text-align:justify;"><strong>Tools and Resources:</strong></div>
 <ul style="margin-left:28px;">
@@ -271,12 +309,6 @@ a:hover
    <li>GlobalSat: BU-353-S4 USB GPS Receiver</li>
    <li>IMU data through CAN bus</li>
 </ul>
-<div style="text-align:justify;">&nbsp;</div>
-<div style="text-align:justify;">&nbsp;</div>
-<div style="text-align:justify;">&nbsp;</div>
-<div style="text-align:justify;">&nbsp;</div>
-<div style="text-align:justify;">&nbsp;</div>
-<div style="text-align:justify;">&nbsp;</div>
 <div style="text-align:justify;">&nbsp;</div>
 <div>We tried to test our dataset with three algorithms whose results are shown below.</div>
 </div>
@@ -291,6 +323,20 @@ a:hover
 </div>
 <div id="wb_YouTube2" style="position:absolute;left:208px;top:1015px;width:661px;height:371px;z-index:12;">
 <iframe id="YouTube2" src="https://www.youtube.com/embed/VL1JCda6qeo?rel=0&amp;autoplay=1&amp;autohide=1&amp;fs=1" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="wb_Text3" style="position:absolute;left:212px;top:1820px;width:692px;height:170px;z-index:13;">
+<div style="font-family:Arial;font-size:13px;line-height:15px;color:#000000;">
+<div>We observed that the algorithm were able to segment ground and non-ground points from the point cloud decently, detect cars/ people/ trees in the surroundings. Though it could take input from one point cloud only.</div>
+<div>&nbsp;</div>
+<div><strong>Next Steps: </strong>Combine point clouds from both VLP-16 lidars and re-run the algorithm.</div>
+</div>
+</div>
+<div id="wb_Shape2" style="position:absolute;left:0px;top:1948px;width:897px;height:42px;z-index:14;">
+<img src="images/img0011.png" id="Shape2" alt="" title="" style="border-width:0;width:897px;height:42px"></div>
+<div id="wb_Text9" style="position:absolute;left:3px;top:1959px;width:882px;height:42px;z-index:15;">
+<div style="font-family:'Segoe UI';font-size:12px;color:#000000;">
+<div style="text-align:center"><span style="font-family:Arial;font-size:13px;color:#0000FF;background-color:#FFFFFF;">Copyright &copy; 2022 by </span><span style="font-family:Arial;font-size:13px;color:#0000FF;background-color:#FFFFFF;">&quot;</span><span style="font-family:Arial;font-size:13px;color:#0000FF;background-color:#FFFFFF;">Dev Vaibhav</span><span style="font-family:Arial;font-size:13px;color:#0000FF;background-color:#FFFFFF;">&quot;</span><span style="font-family:Arial;font-size:13px;color:#0000FF;background-color:#FFFFFF;">&nbsp; &middot;&nbsp; All Rights reserved&nbsp; &middot;&nbsp; </span><span style="font-family:Arial;font-size:13px;color:#0000FF;background-color:#FFFFFF;"><a href="mailto:vaibhav.dev5@gmail.com">E-Mail: vaibhav.dev5@gmail.com</a></span><span style="font-family:Arial;font-size:13px;color:#0000FF;background-color:#FFFFFF;"> | </span><span style="font-family:Arial;font-size:13px;color:#0000FF;background-color:#FFFFFF;"><a href="https://www.linkedin.com/in/dev-vaibhav/" target="_blank">LinkedIn</a></span><span style="font-family:Arial;font-size:13px;color:#0000FF;background-color:#FFFFFF;"> | </span><span style="font-family:Arial;font-size:13px;color:#0000FF;background-color:#FFFFFF;"><a href="https://github.com/devvaibhav455?tab=repositories" target="_blank">GitHub</a></span></div>
+</div>
 </div>
 </div>
 </body>
